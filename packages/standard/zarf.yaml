@@ -1,0 +1,22 @@
+kind: ZarfPackageConfig
+metadata:
+  name: ai4ns
+  description: "AI for National Security"
+  authors: "Defense Unicorns - AI4NS"
+  version: "0.1.0"
+
+components:
+  - name: leapfrogai-api
+    required: true
+    import:
+      path: ../../src/leapfrogai-api
+    
+  - name: leapfrogai-ui
+    required: true
+    import:
+      path: ../../src/leapfrogai-ui
+  
+  - name: leapfrogai-backend-python-llama-cpp
+    require: true
+    import:
+      path: ../../src/leapfrogai-backend-python-llama-cpp
