@@ -1,0 +1,4 @@
+variables: 
+  leapfrog-ui:
+    domain: https://leapfrogai-ui.uds.dev
+    model: llama-cpp
