@@ -1,7 +1,7 @@
 variables:
   leapfrog-ui:
     domain: https://ai.uds.dev
-    model: llama-cpp-python
+    model: llama-cpp-python-gpu
   llama-cpp-python:
     gpu_enabled: "true"
     requests_gpu: 1
