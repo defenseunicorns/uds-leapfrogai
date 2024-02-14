@@ -1,12 +1,15 @@
 kind: UDSBundle
 metadata:
-  name: ai4ns-standard-dev
-  description: A UDS bundle for deploying AI4NS in a k3d development cluster
-  version: "0.1.0"
+  name: k3d-core-istio-dev
+  description: A UDS bundle for deploying Istio from UDS Core on a development cluster
+  # x-release-please-start-version
+  version: "0.12.0"
+  # x-release-please-end
 
 packages:
   - name: uds-k3d-dev
     repository: ghcr.io/defenseunicorns/packages/uds-k3d
+    # renovate: datasource=github-tags depName=defenseunicorns/uds-k3d versioning=semver
     ref: 0.3.1
     overrides:
       uds-dev-stack:
@@ -24,15 +27,16 @@ packages:
             - name: policies
               description: "Minio policies"
               path: policies
+
   - name: init
     repository: ghcr.io/defenseunicorns/packages/init
     # renovate: datasource=github-tags depName=defenseunicorns/zarf versioning=semver
-    ref: v0.32.1
+    ref: v0.32.2
 
   - name: core-istio
     path: ../../build/
     # x-release-please-start-version
-    ref: 0.10.0
+    ref: 0.12.0
     # x-release-please-end
     overrides:
       istio-admin-gateway:
@@ -53,7 +57,3 @@ packages:
             - name: TENANT_TLS_KEY
               description: "The TLS key for the tenant gateway (must be base64 encoded)"
               path: tls.key
-
-  - name: ai4ns
-    path: ../../build/
-    ref: 0.1.0

@@ -1,0 +1,3 @@
+variables:
+  uds-k3d-dev:
+    k3d_extra_args: "--gpus=1 --image=ghcr.io/justinthelaw/k3d-gpu-support:v1.27.4-k3s1-cuda"
