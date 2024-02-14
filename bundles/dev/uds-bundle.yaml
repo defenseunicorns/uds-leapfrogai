@@ -16,7 +16,7 @@ packages:
   # Model for generic chat
   - name: llama-cpp-python
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python-gpu
-    ref: 0.2.0-amd65
+    ref: 0.2.0
 
   # Model for converting audio to text
   - name: whisper
