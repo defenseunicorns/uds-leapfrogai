@@ -21,4 +21,4 @@ packages:
   # Model for converting audio to text
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: 0.5.0-amd64
+    ref: 0.5.0
