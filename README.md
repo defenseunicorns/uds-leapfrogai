@@ -5,3 +5,9 @@
 > The packages and bundles are currently in an experimental state and will stabilize over the coming months. Components may change, and data is not guaranteed to be durable.
 
 A UDS Capability for running AI for National Security in Defense Unicorns UDS environments.
+
+## Usage
+
+Prerequisites: make sure uds-core is already deployed.
+
+Go into `bundles/**` and pick the correct bundle. Use `uds create .` and then `uds deploy [package name]`.

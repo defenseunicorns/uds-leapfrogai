@@ -2,9 +2,9 @@
 
 ## Disclaimer
 
-`llama-cpp-python-gpu` **_WILL NOT_** run if no GPU resources are available. You must provide sufficient NVIDIA GPU scheduling or else it will go into a crash loop.
+`llama-cpp-python-gpu` **_WILL NOT_** run if GPU resources are unavailable to the pod(s). You must provide sufficient NVIDIA GPU scheduling or else the pod(s) will go into a crash loop.
 
-`whisper` can run with ot without GPU scheduling - just turn off the `GPU_ENABLED` boolean.
+`whisper` can run without without GPU scheduling - just turn off the `GPU_ENABLED` boolean.
 
 ## Testing
 
