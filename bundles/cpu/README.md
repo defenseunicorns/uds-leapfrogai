@@ -14,3 +14,10 @@ uds create .
 
 uds deploy <package name>
 ```
+
+## Checking Deployment
+
+| Tool | URL |
+| --- | --- |
+| UI | <https://ai.uds.dev> |
+| API | <https://leapfrogai-api.uds.dev> |
