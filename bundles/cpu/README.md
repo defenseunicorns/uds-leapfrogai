@@ -2,13 +2,14 @@
 
 ## Prerequisites
 
-- Setup K3D
-- Setup CLI
+- K3D
+- UDS CLI
+- Zarf
 
 ## Instructions
 
 ```
-uds deploy k3d-core-istio-dev:0.12.0
+uds deploy k3d-core-istio-dev:0.14.1
 
 uds create .
 
@@ -21,3 +22,7 @@ uds deploy <package name>
 | --- | --- |
 | UI | <https://ai.uds.dev> |
 | API | <https://leapfrogai-api.uds.dev> |
+
+## References
+
+- [UDS-Core](https://github.com/defenseunicorns/uds-core)
