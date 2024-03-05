@@ -11,7 +11,7 @@ packages:
 
   - name: text-embeddings
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
-    ref: dev
+    ref: 0.1.0
 
   - name: rag
     repository: ghcr.io/defenseunicorns/packages/rag
