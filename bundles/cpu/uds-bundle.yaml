@@ -20,7 +20,7 @@ packages:
 
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: dev-amd64
+    ref: 0.5.1
 
   - name: rag
     repository: ghcr.io/defenseunicorns/packages/rag
