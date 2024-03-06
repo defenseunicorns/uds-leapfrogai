@@ -2,9 +2,9 @@
 
 ## Prerequisites
 
-- K3D
-- UDS CLI
-- Zarf
+- [K3D](https://k3d.io/)
+- [UDS CLI](https://github.com/defenseunicorns/uds-cli)
+- [Zarf](https://github.com/defenseunicorns/zarf)
 
 ## Instructions
 
@@ -21,7 +21,8 @@ uds deploy <package name>
 | Tool | URL |
 | --- | --- |
 | UI | <https://ai.uds.dev> |
-| API | <https://leapfrogai-api.uds.dev> |
+| API | <https://leapfrogai-api.uds.dev/docs> |
+| RAG Server | <https://leapfrogai-rag.uds.dev/docs> |
 
 ## References
 
