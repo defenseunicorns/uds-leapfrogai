@@ -15,7 +15,7 @@ packages:
 
   - name: rag
     repository: ghcr.io/defenseunicorns/packages/rag
-    ref: dev
+    ref: 0.3.0
 
   # Model for generic chat
   - name: llama-cpp
