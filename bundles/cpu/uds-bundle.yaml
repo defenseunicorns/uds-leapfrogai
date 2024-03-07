@@ -14,9 +14,9 @@ packages:
     ref: 0.1.0
 
   # Model for generic chat
-  - name: llama-cpp
+  - name: llama-cpp-python
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python
-    ref: dev
+    ref: 0.2.1
 
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
