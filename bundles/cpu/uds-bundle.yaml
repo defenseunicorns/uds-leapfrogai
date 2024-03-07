@@ -2,7 +2,7 @@ kind: UDSBundle
 metadata:
   name: leapfrogai
   description: A UDS bundle for deploying LeapfrogAI
-  version: 0.2.2
+  version: 0.2.3
 
 packages:
   - name: leapfrogai-api
@@ -15,12 +15,12 @@ packages:
 
   # Model for generic chat
   - name: llama-cpp
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python
     ref: dev
 
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: 0.5.1
+    ref: 0.5.2
 
   - name: rag
     repository: ghcr.io/defenseunicorns/packages/rag
@@ -28,4 +28,4 @@ packages:
 
   - name: leapfrogai-ui
     repository: ghcr.io/defenseunicorns/packages/leapfrogai-ui
-    ref: dev
+    ref: 0.3.1
