@@ -4,7 +4,6 @@
 
 - [K3D](https://k3d.io/)
 - [UDS CLI](https://github.com/defenseunicorns/uds-cli)
-- [Zarf](https://github.com/defenseunicorns/zarf)
 
 ## Instructions
 
@@ -17,6 +16,12 @@ uds deploy <package name>
 ```
 
 ## Checking Deployment
+
+Inspect the cluster using:
+
+``` bash
+uds zarf tools monitor
+```
 
 | Tool | URL |
 | --- | --- |
