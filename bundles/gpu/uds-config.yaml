@@ -1,12 +1,14 @@
 variables:
   leapfrog-ui:
     domain: https://ai.uds.dev
-    model: llama-cpp-python-gpu
+    model: vllm
   llama-cpp-python:
     gpu_enabled: "true"
     requests_gpu: 1
     limits_gpu: 1
   whisper:
-    gpu_enabled: "true"
-    requests_gpu: 1
-    limits_gpu: 1
+    gpu_enabled: "false"
+    requests_gpu: 0
+    limits_gpu: 0
+  rag:
+    model: vllm

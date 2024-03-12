@@ -14,9 +14,9 @@ packages:
     ref: 0.3.2
 
   # Model for generic chat, GPU Enabled
-  - name: llama-cpp-python
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python
-    ref: "0.2.1-gpu"
+  - name: vllm
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/vllm
+    ref: dev
 
   # Model for providing vector embeddings for text
   - name: text-embeddings
