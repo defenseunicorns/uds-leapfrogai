@@ -6,19 +6,28 @@ metadata:
 
 packages:
   - name: leapfrogai-api
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai-api
-    ref: dev
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-api
+    ref: 0.5.3
 
-  - name: leapfrog-ui
-    repository: ghcr.io/defenseunicorns/packages/leapfrog-ui
-    ref: dev3
+  - name: leapfrogai-ui
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
+    ref: 0.3.2
 
-  # Model for generic chat
+  # Model for generic chat, GPU Enabled
   - name: llama-cpp-python
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python-gpu
-    ref: 0.2.0
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python
+    ref: "0.2.1-gpu"
 
-  # Model for converting audio to text
+  # Model for providing vector embeddings for text
+  - name: text-embeddings
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
+    ref: 0.1.0
+
+  - name: rag
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/rag
+    ref: 0.3.1
+
+  # Model for converting audio to text, whisper-base fp16, GPU-enabled
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: 0.5.0
+    ref: 0.5.2
