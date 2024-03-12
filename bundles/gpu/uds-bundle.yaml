@@ -27,7 +27,7 @@ packages:
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/rag
     ref: 0.3.1
 
-  # Model for converting audio to text, whisper-base fp16, GPU-enabled
+  # Model for converting audio to text
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
     ref: 0.5.2
