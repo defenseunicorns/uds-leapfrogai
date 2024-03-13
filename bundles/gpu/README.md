@@ -1,5 +1,10 @@
 # LeapfrogAI UDS GPU-Enabled Deployment
 
+## Prerequisites
+
+- [K3D](https://k3d.io/)
+- [UDS CLI](https://github.com/defenseunicorns/uds-cli)
+
 ## Disclaimers
 
 `llama-cpp-python` (GPU variation) **_WILL NOT_** run if GPU resources are unavailable to the pod(s). You must provide sufficient NVIDIA GPU scheduling or else the pod(s) will go into a crash loop.
@@ -22,3 +27,21 @@ In order to test the GPU deployment locally on K3d, use the following command wh
 ```bash
  uds deploy k3d-core-istio-dev:0.14.1 --set K3D_EXTRA_ARGS="--gpus=all --image=ghcr.io/justinthelaw/k3d-gpu-support:v1.27.4-k3s1-cuda"
 ```
+
+## Checking Deployment
+
+Inspect the cluster using:
+
+``` bash
+uds zarf tools monitor
+```
+
+| Tool | URL |
+| --- | --- |
+| UI | <https://ai.uds.dev> |
+| API | <https://leapfrogai-api.uds.dev/docs> |
+| RAG Server | <https://leapfrogai-rag.uds.dev/docs> |
+
+## References
+
+- [UDS-Core](https://github.com/defenseunicorns/uds-core)
