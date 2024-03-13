@@ -2,7 +2,7 @@
 
 ## Disclaimers
 
-`llama-cpp-python-gpu` **_WILL NOT_** run if GPU resources are unavailable to the pod(s). You must provide sufficient NVIDIA GPU scheduling or else the pod(s) will go into a crash loop.
+`llama-cpp-python` (GPU variation) **_WILL NOT_** run if GPU resources are unavailable to the pod(s). You must provide sufficient NVIDIA GPU scheduling or else the pod(s) will go into a crash loop.
 
 `whisper` can run without without GPU scheduling - just turn off the `GPU_ENABLED` boolean.
 
@@ -10,10 +10,10 @@ If `vllm` is being used with:
 
 - A quantized model, then `QUANTIZATION` must be set to the quantization method (e.g., `awq`, `gptq`, etc.)
 - Tensor parallelism for spreading a model's heads across multiple GPUs, then `TENSOR_PARALLEL_SIZE` must be set to an integer value that:
-    a) matches the GPU resources that are allocatable in the cluster
+    a) falls within the number of GPU resources (`nvidia.com/gpu`) that are allocatable in the cluster
     b) divisible by the number of attention heads in the model architecture (if number of heads is 32, then `TENSOR_PARALLEL_SIZE` could be 2, 4, etc.)
 
-These `vllm` specific environment variables must be set at the model skeleton level, or when the model is deployed into the cluster.
+These `vllm` specific environment variables must be set at the model skeleton level or when the model is deployed into the cluster.
 
 ## Testing
 
