@@ -5,29 +5,32 @@ metadata:
   version: 0.1.0
 
 packages:
+  # OpenAI-like API 
   - name: leapfrogai-api
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-api
-    ref: 0.5.3
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai-api
+    ref: 0.5.2
 
+  # AI chat, transcription, and summarization frontend
   - name: leapfrogai-ui
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
-    ref: 0.3.2
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai-ui
+    ref: 0.3.1
 
-  # Model for generic chat, GPU Enabled
-  - name: vllm
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/vllm
-    ref: dev
+  # Backend capability for RAG and VectorDB
+  - name: rag
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/rag
+    ref: 0.3.1
 
   # Model for providing vector embeddings for text
   - name: text-embeddings
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
     ref: 0.1.0
 
-  - name: rag
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/rag
-    ref: 0.3.1
+  # Model for generic chat and summarization
+  - name: synthia-7b-awq
+    repository: localhost:5000/defenseunicorns/packages/leapfrogai/synthia-7b-awq
+    ref: 0.0.1
 
   # Model for converting audio to text
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: 0.5.2
+    ref: 0.5.0
