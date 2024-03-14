@@ -8,12 +8,12 @@ packages:
   # OpenAI-like API 
   - name: leapfrogai-api
     repository: ghcr.io/defenseunicorns/packages/leapfrogai-api
-    ref: 0.5.2
+    ref: 0.5.3
 
   # AI chat, transcription, and summarization frontend
   - name: leapfrogai-ui
     repository: ghcr.io/defenseunicorns/packages/leapfrogai-ui
-    ref: 0.3.1
+    ref: 0.3.2
 
   # Backend capability for RAG and VectorDB
   - name: rag
@@ -26,11 +26,11 @@ packages:
     ref: 0.1.0
 
   # Model for generic chat and summarization
-  - name: synthia-7b-awq
-    repository: localhost:5000/defenseunicorns/packages/leapfrogai/synthia-7b-awq
-    ref: 0.0.1
+  - name: vllm
+    repository: localhost:5000/defenseunicorns/packages/leapfrogai/vllm
+    ref: 0.1.0
 
   # Model for converting audio to text
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: 0.5.0
+    ref: 0.5.2

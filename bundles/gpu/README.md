@@ -15,8 +15,8 @@ If `vllm` is being used with:
 
 - A quantized model, then `QUANTIZATION` must be set to the quantization method (e.g., `awq`, `gptq`, etc.)
 - Tensor parallelism for spreading a model's heads across multiple GPUs, then `TENSOR_PARALLEL_SIZE` must be set to an integer value that:
-    a) falls within the number of GPU resources (`nvidia.com/gpu`) that are allocatable in the cluster
-    b) divisible by the number of attention heads in the model architecture (if number of heads is 32, then `TENSOR_PARALLEL_SIZE` could be 2, 4, etc.)
+  a) falls within the number of GPU resources (`nvidia.com/gpu`) that are allocatable in the cluster
+  b) divisible by the number of attention heads in the model architecture (if number of heads is 32, then `TENSOR_PARALLEL_SIZE` could be 2, 4, etc.)
 
 These `vllm` specific environment variables must be set at the model skeleton level or when the model is deployed into the cluster.
 
@@ -32,14 +32,14 @@ In order to test the GPU deployment locally on K3d, use the following command wh
 
 Inspect the cluster using:
 
-``` bash
+```bash
 uds zarf tools monitor
 ```
 
-| Tool | URL |
-| --- | --- |
-| UI | <https://ai.uds.dev> |
-| API | <https://leapfrogai-api.uds.dev/docs> |
+| Tool       | URL                                   |
+| ---------- | ------------------------------------- |
+| UI         | <https://ai.uds.dev>                  |
+| API        | <https://leapfrogai-api.uds.dev/docs> |
 | RAG Server | <https://leapfrogai-rag.uds.dev/docs> |
 
 ## References
