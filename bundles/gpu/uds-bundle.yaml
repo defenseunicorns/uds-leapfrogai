@@ -27,7 +27,7 @@ packages:
 
   # Model for generic chat and summarization
   - name: vllm
-    repository: localhost:5000/defenseunicorns/packages/leapfrogai/vllm
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/vllm
     ref: 0.1.0
 
   # Model for converting audio to text
