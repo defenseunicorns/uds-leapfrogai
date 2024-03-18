@@ -21,7 +21,7 @@ variables:
     gpu_enabled: "true"
     requests_gpu: 1
     limits_gpu: 1
-    quantization: awq
+    quantization: gptq
     tensor_parallel_size: 1
     
   rag:
