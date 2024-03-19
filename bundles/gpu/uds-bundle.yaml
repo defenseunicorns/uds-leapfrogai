@@ -18,7 +18,7 @@ packages:
   # Model for generic chat and summarization
   - name: vllm
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/vllm
-    ref: dev
+    ref: 0.1.0
 
   # Model for providing vector embeddings for text
   - name: text-embeddings
