@@ -11,7 +11,7 @@ packages:
 
   - name: text-embeddings
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
-    ref: 0.1.0
+    ref: 0.1.1
 
   # Model for generic chat
   - name: llama-cpp-python
