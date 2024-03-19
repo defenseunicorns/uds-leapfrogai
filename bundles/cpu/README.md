@@ -1,4 +1,4 @@
-# CPU-Based UDS Deployment of AI for National Security
+# CPU Bundle for LeapfrogAI
 
 ## Prerequisites
 
@@ -7,12 +7,12 @@
 
 ## Instructions
 
-```
+``` bash
 uds deploy k3d-core-istio-dev:0.14.1
 
 uds create .
 
-uds deploy <package name>
+uds deploy <bundle name> # from last step
 ```
 
 ## Checking Deployment
