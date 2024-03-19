@@ -13,7 +13,7 @@ packages:
   # AI chat, transcription, and summarization frontend
   - name: leapfrogai-ui
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
-    ref: 0.3.2
+    ref: 0.3.3
 
   # Model for generic chat and summarization
   - name: vllm
