@@ -27,5 +27,5 @@ packages:
     ref: 0.3.1
 
   - name: leapfrogai-ui
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai-ui
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
     ref: 0.3.1
