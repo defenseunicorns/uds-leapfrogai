@@ -1,6 +1,6 @@
 # see individual zarf packaging configuration for more variables and variable descriptions
 variables:
-  leapfrog-ui:
+  leapfrogai-ui:
     domain: https://ai.uds.dev
     model: vllm
     concurrent_requests: "true"
