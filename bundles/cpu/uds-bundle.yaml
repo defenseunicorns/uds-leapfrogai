@@ -1,7 +1,7 @@
 kind: UDSBundle
 metadata:
-  name: leapfrogai
-  description: A UDS bundle for deploying LeapfrogAI
+  name: leapfrogai-cpu
+  description: A UDS bundle for deploying LeapfrogAI for CPU-only systems
   version: 0.2.0
 
 packages:
