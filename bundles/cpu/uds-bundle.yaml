@@ -6,8 +6,8 @@ metadata:
 
 packages:
   - name: leapfrogai-api
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai-api
-    ref: 0.5.2
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-api
+    ref: 0.5.3
 
   - name: text-embeddings
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
