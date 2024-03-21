@@ -9,23 +9,26 @@ packages:
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-api
     ref: 0.5.3
 
-  - name: text-embeddings
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
-    ref: 0.1.1
+  - name: leapfrogai-ui
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
+    ref: 0.3.4
 
   # Model for generic chat
   - name: llama-cpp-python
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python
     ref: 0.2.1
 
-  - name: whisper
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
-    ref: 0.5.2
+  - name: text-embeddings
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
+    ref: 0.1.1
 
   - name: rag
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/rag
     ref: 0.3.1
 
-  - name: leapfrogai-ui
-    repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
-    ref: 0.3.3
+  - name: whisper
+    repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
+    ref: 0.5.2
+
+
+
