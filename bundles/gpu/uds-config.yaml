@@ -9,16 +9,28 @@ variables:
     max_tokens: 16384
 
   text-embeddings:
+    requests_cpu: 0
+    limits_cpu: 0
+    requests_memory: 0
+    limits_memory: 0
     gpu_enabled: "false"
     requests_gpu: 0
     limits_gpu: 0
 
   whisper:
+    requests_cpu: 0
+    limits_cpu: 0
+    requests_memory: 0
+    limits_memory: 0
     gpu_enabled: "false"
     requests_gpu: 0
     limits_gpu: 0
 
   vllm: # default is synthia-7b
+    requests_cpu: 0
+    limits_cpu: 0
+    requests_memory: 0
+    limits_memory: 0
     gpu_enabled: "true"
     requests_gpu: 1
     limits_gpu: 1
