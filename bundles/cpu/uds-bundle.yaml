@@ -5,27 +5,32 @@ metadata:
   version: 0.2.1
 
 packages:
+  # API
   - name: leapfrogai-api
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-api
     ref: 0.5.3
 
+  # Legacy UI
   - name: leapfrogai-ui
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/leapfrogai-ui
     ref: 0.3.4
 
-  # Model for generic chat
+  # Chat Model
   - name: llama-cpp-python
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/llama-cpp-python
     ref: 0.2.1
 
+  # Text Embeddings Model
   - name: text-embeddings
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/text-embeddings
     ref: 0.1.1
 
+  # RAG Backend
   - name: rag
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/rag
     ref: 0.3.1
 
+  # Transcription Model
   - name: whisper
     repository: ghcr.io/defenseunicorns/packages/leapfrogai/whisper
     ref: 0.5.2
