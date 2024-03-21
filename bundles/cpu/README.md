@@ -7,7 +7,7 @@
 
 ## Instructions
 
-```bash
+```
 uds deploy k3d-core-istio-dev:0.14.1
 
 uds create .
@@ -19,14 +19,14 @@ uds deploy <package name>
 
 Inspect the cluster using:
 
-```bash
+``` bash
 uds zarf tools monitor
 ```
 
-| Tool       | URL                                   |
-| ---------- | ------------------------------------- |
-| UI         | <https://ai.uds.dev>                  |
-| API        | <https://leapfrogai-api.uds.dev/docs> |
+| Tool | URL |
+| --- | --- |
+| UI | <https://ai.uds.dev> |
+| API | <https://leapfrogai-api.uds.dev/docs> |
 | RAG Server | <https://leapfrogai-rag.uds.dev/docs> |
 
 ## References
