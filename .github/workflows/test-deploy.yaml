@@ -6,6 +6,8 @@ on:
       - "CODEOWNERS"
       - ".gitignore"
       - "docs/**"
+      - "bundles/gpu/**"
+      - ".github/**"
 
 concurrency:
   group: deploy-test-${{ github.ref }}
