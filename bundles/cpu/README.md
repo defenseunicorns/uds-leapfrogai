@@ -8,10 +8,8 @@
 ## Instructions
 
 ``` bash
-uds deploy k3d-core-istio-dev:0.14.1
-
+uds deploy k3d-core-slim-dev:0.18.0
 uds create .
-
 uds deploy <bundle name> # from last step
 ```
 

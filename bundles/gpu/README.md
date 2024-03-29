@@ -26,7 +26,7 @@ In order to test the GPU deployment locally on K3d, use the following command wh
 
 ```bash
  uds create .
- uds deploy k3d-core-istio-dev:0.14.1 --set K3D_EXTRA_ARGS="--gpus=all --image=ghcr.io/justinthelaw/k3d-gpu-support:v1.27.4-k3s1-cuda"
+ uds deploy k3d-core-slim-dev:0.18.0 --set K3D_EXTRA_ARGS="--gpus=all --image=ghcr.io/justinthelaw/k3d-gpu-support:v1.27.4-k3s1-cuda"
  uds deploy uds-bundle-leapfrogai-*.tar.zst --confirm
 ```
 
